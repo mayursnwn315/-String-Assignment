@@ -1,0 +1,69 @@
+﻿1.What is a String in Java? 
+Ans-
+
+
+In Java, a String is an object that represents a sequence of characters. It is a part of the Java Standard Library and is widely used for handling textual data. Strings in Java are immutable, meaning their values cannot be changed after they are created.
+
+
+2.Types of String in Java are?
+Ans-
+In Java, there are two types of strings:
+
+
+String Literal:
+
+
+java
+Copy code
+String strLiteral = "Hello, World!";
+String Object:
+
+
+java
+Copy code
+String strObject = new String("Hello, World!");
+
+
+3.How many ways can you create String objects in Java?
+Ans-
+
+
+There are two main ways to create String objects in Java:
+
+
+By string literal:
+
+
+java
+Copy code
+String strLiteral = "Hello, World!";
+By using the new keyword and constructor:
+
+
+java
+Copy code
+String strObject = new String("Hello, World!");
+
+
+4.What is a string constant pool?
+Ans-
+
+
+The String Constant Pool is a special area in the memory where the Java Virtual Machine (JVM) stores string literals. String literals are sequences of characters enclosed in double quotes, and they represent constant values. The primary purpose of the String Constant Pool is to enhance memory efficiency and reduce duplication of strings.
+
+
+5.What do you mean by mutable and immutable objects?
+Ans-
+
+
+Mutable objects: Objects whose state (or value) can be changed after they are created are called mutable objects.
+
+
+Immutable objects: Objects whose state cannot be changed after they are created are called immutable objects. Strings in Java are immutable, which means once a string object is created, its value cannot be modified.
+
+
+6.Where exactly is the String constant pool located in memory?
+Ans-
+
+
+The String constant pool is a special area in the Java memory heap where string literals are stored. It is a pool of unique strings, and if you create a string using a literal, Java checks if an identical string already exists in the pool. If it does, the existing reference is returned instead of creating a new object. The String constant pool is part of the PermGen (Permanent Generation) space for Java versions prior to Java 7, and in later versions, it is stored in the native heap as part of the "Metaspace."
